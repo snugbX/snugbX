@@ -21,29 +21,6 @@
   <img src="https://img.shields.io/badge/Flask-0D1117?logo=flask&logoColor=fff&labelColor=0D1117&color=9CA3AF&style=flat-square"/>
 </p>
 
----
-
-### Métricas
-<table align="center" width="100%">
-  <tr>
-    <td align="center" width="60%">
-      <img src="./github-metrics.svg?v=3" alt="Metrics main" />
-      <br/><sub>Linguagens + calendário 3D</sub>
-    </td>
-    <td align="center" width="40%">
-      <img src="./github-metrics-achievements.svg?v=3" alt="Achievements" />
-      <br/><sub>Achievements</sub>
-    </td>
-  </tr>
-  <tr>
-    <td colspan="2" align="center">
-      <img src="./github-metrics-3d.svg?v=3" alt="3D contributions banner" />
-    </td>
-  </tr>
-</table>
-
----
-
 ### Projetos em destaque
 - 🚗 **Sistema para gerenciamento de veículos elétricos** — Angular + Spring Boot.  
 - 🎲 **LoteriasGame** — geração de jogos com análise/ML (Flask + JS).  
