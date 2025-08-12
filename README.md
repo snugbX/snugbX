@@ -48,7 +48,9 @@ Participei da **Residência em Programação TIC18**, adquirindo experiência pr
   <img height="150em" src="https://github-readme-stats.vercel.app/api?username=snugbX&show_icons=true&theme=tokyonight&hide_border=true&count_private=true"/>
   <img height="150em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=snugbX&layout=compact&theme=tokyonight&hide_border=true"/>
 </div>
-
+<p align="center">
+  <img src="./github-metrics.svg" alt="GitHub Metrics" />
+</p>
 ---
 
 ## 💼 Projetos em destaque
