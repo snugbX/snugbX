@@ -15,7 +15,7 @@ jobs:
         uses: lowlighter/metrics@latest
         with:
           # pode usar o GITHUB_TOKEN padrão mesmo
-          token: ${{ secrets.METRICS_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
 
           user: snugbX
           template: classic
