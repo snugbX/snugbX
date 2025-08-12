@@ -1,0 +1,52 @@
+<svg width="1200" height="280" viewBox="0 0 1200 280" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0D1117"/>
+      <stop offset="40%" stop-color="#0D1117"/>
+      <stop offset="100%" stop-color="#0E251B"/>
+    </linearGradient>
+
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#006B3F"/>
+      <stop offset="100%" stop-color="#00A86B"/>
+    </linearGradient>
+
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#1f2a24" stroke-opacity="0.35" stroke-width="1"/>
+    </pattern>
+
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="white" stop-opacity="0.65"/>
+      <stop offset="100%" stop-color="white" stop-opacity="0.05"/>
+    </linearGradient>
+    <mask id="fadeMask">
+      <rect width="1200" height="280" fill="url(#fade)"/>
+    </mask>
+  </defs>
+
+  <rect width="1200" height="280" fill="url(#g)"/>
+  <rect width="1200" height="280" fill="url(#grid)" opacity="0.45"/>
+
+  <path d="M-100,220 L400,0 L520,0 L20,280 Z" fill="url(#accent)" opacity="0.45" filter="url(#glow)" />
+  <path d="M1100,280 L700,60 L760,60 L1200,220 Z" fill="url(#accent)" opacity="0.30" filter="url(#glow)" />
+
+  <g transform="translate(72, 86)">
+    <rect x="0" y="0" width="8" height="108" rx="4" fill="url(#accent)"/>
+    <text x="28" y="48" font-family="Inter, Segoe UI, Roboto, Arial, sans-serif" font-weight="700" font-size="48" fill="#E6FFF3">
+      Everlan Santos
+    </text>
+    <text x="28" y="88" font-family="Inter, Segoe UI, Roboto, Arial, sans-serif" font-weight="500" font-size="22" fill="#C8F5DE">
+      Desenvolvedor, educador - Ubaitaba, BA
+    </text>
+  </g>
+
+  <rect x="72" y="228" width="1056" height="3" rx="2" fill="url(#accent)" mask="url(#fadeMask)"/>
+</svg>

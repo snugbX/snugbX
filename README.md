@@ -1,64 +1,52 @@
-<h1 align="center">👋 Olá, eu sou o Everlan Santos</h1>
+<p align="center">
+  <img src="./everlan-hero-ifba.svg" alt="Everlan Santos — Dev & Educator banner" />
+</p>
 
 <p align="center">
-  <em>💻 Técnico em Informática | 🎓 Licenciatura em Computação | 🌎 Ubaitaba - Bahia</em>
+  <a href="https://www.linkedin.com/in/everlandev">LinkedIn</a> ·
+  <a href="mailto:santoseverlan29@gmail.com">E-mail</a> ·
+  <a href="https://github.com/snugbX">GitHub</a>
 </p>
 
 ---
 
-## 🚀 Sobre mim
-Sou apaixonado por tecnologia e desenvolvimento de software.  
-Atualmente curso **Licenciatura em Computação** e tenho experiência em diferentes linguagens, frameworks e tecnologias voltadas para desenvolvimento web, mobile e desktop.  
-Participei da **Residência em Programação TIC18**, adquirindo experiência prática em projetos reais.
+### Stack principal
+<p align="center">
+  <img src="https://img.shields.io/badge/JavaScript-000?logo=javascript&logoColor=F7DF1E&labelColor=0D1117&style=flat-square"/>
+  <img src="https://img.shields.io/badge/TypeScript-0D1117?logo=typescript&logoColor=fff&labelColor=0D1117&color=006B3F&style=flat-square"/>
+  <img src="https://img.shields.io/badge/React%20Native-0D1117?logo=react&logoColor=61DAFB&labelColor=0D1117&color=00A86B&style=flat-square"/>
+  <img src="https://img.shields.io/badge/Angular-0D1117?logo=angular&logoColor=fff&labelColor=0D1117&color=006B3F&style=flat-square"/>
+  <img src="https://img.shields.io/badge/Python-0D1117?logo=python&logoColor=fff&labelColor=0D1117&color=00A86B&style=flat-square"/>
+  <img src="https://img.shields.io/badge/Spring%20Boot-0D1117?logo=springboot&logoColor=fff&labelColor=0D1117&color=006B3F&style=flat-square"/>
+  <img src="https://img.shields.io/badge/Flask-0D1117?logo=flask&logoColor=fff&labelColor=0D1117&color=9CA3AF&style=flat-square"/>
+</p>
 
 ---
 
-## 🔗 Conecte-se comigo
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/everlandev)
-[![GitHub](https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/snugbX)
+### Métricas
+<table align="center" width="100%">
+  <tr>
+    <td align="center" width="60%">
+      <img src="./github-metrics.svg?v=3" alt="Metrics main" />
+      <br/><sub>Linguagens + calendário 3D</sub>
+    </td>
+    <td align="center" width="40%">
+      <img src="./github-metrics-achievements.svg?v=3" alt="Achievements" />
+      <br/><sub>Achievements</sub>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center">
+      <img src="./github-metrics-3d.svg?v=3" alt="3D contributions banner" />
+    </td>
+  </tr>
+</table>
 
 ---
 
-## 🛠️ Habilidades
+### Projetos em destaque
+- 🚗 **Sistema para gerenciamento de veículos elétricos** — Angular + Spring Boot.  
+- 🎲 **LoteriasGame** — geração de jogos com análise/ML (Flask + JS).  
+- 🎮 **Jogo da Velha com IA** — 
 
-### Linguagens
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)
-![C#](https://img.shields.io/badge/C%23-239120?style=flat-square&logo=c-sharp&logoColor=white)
-![C](https://img.shields.io/badge/C-00599C?style=flat-square&logo=c&logoColor=white)
-![Java](https://img.shields.io/badge/Java-007396?style=flat-square&logo=java&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-
-### Frameworks & Bibliotecas
-![Angular](https://img.shields.io/badge/Angular-DD0031?style=flat-square&logo=angular&logoColor=white)
-![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white)
-![Django](https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white)
-![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=flat-square&logo=laravel&logoColor=white)
-![React Native](https://img.shields.io/badge/React_Native-20232A?style=flat-square&logo=react&logoColor=61DAFB)
-
-### Desenvolvimento Web
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
-
----
-
-## 📈 Estatísticas do GitHub
-<div align="center">
-  <img height="150em" src="https://github-readme-stats.vercel.app/api?username=snugbX&show_icons=true&theme=tokyonight&hide_border=true&count_private=true"/>
-  <img height="150em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=snugbX&layout=compact&theme=tokyonight&hide_border=true"/>
-</div>
-
-<img src="https://raw.githubusercontent.com/snugbX/snugbX/master/github-metrics.svg" alt="GitHub Metrics">
----
-
-## 💼 Projetos em destaque
-- 🚗 **Sistema para gerenciamento de veículos elétricos** — Angular + Spring Boot  
-- 📊 **Dashboard de irrigação autônoma** — Power BI  
-- 🎮 **Jogo da Velha com IA** — Python  
-- 🎲 **Gerador de jogos de loteria** — JavaScript  
-
----
-
-💡 _Sempre buscando aprender e contribuir para projetos que gerem impacto real._
-
+<p align="center"><i>Sempre aprendendo e contribuindo para projetos com impacto real.</i></p>
