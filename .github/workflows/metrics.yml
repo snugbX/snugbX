@@ -1,7 +1,11 @@
 name: Metrics
 on:
-  schedule: [{ cron: "0 */12 * * *" }]  # atualiza a cada 12h
+  schedule:
+    - cron: "0 */12 * * *"   # atualiza a cada 12h
   workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   build:
@@ -10,23 +14,22 @@ jobs:
       - name: Generate SVG
         uses: lowlighter/metrics@latest
         with:
-          # pegue o secret criado acima
+          # use um dos dois tokens (prefira METRICS_TOKEN se criou)
           token: ${{ secrets.METRICS_TOKEN }}
+          # token: ${{ secrets.GITHUB_TOKEN }}
 
-          # === Básico ===
-          user: SEU_USUARIO
-          template: classic
+          user: snugbX
           filename: github-metrics.svg
+          template: classic
           base: header, activity, community, repositories, metadata
           config_timezone: America/Bahia
+          committer_branch: master
 
-          # === Gráfico 3D/Isométrico de contribuições ===
-          plugin_isometric: yes
-          plugin_isometric_duration: full-year
+          # Calendário isométrico (3D)
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
 
-          # === Donut de linguagens ===
+          # Donut de linguagens
           plugin_languages: yes
           plugin_languages_sections: most-used
           plugin_languages_details: percentage
-
-          # (O radar de Commits/Issues/PRs/Reviews/Repos vem do "activity" do base)
