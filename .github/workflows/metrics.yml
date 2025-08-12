@@ -1,52 +1,62 @@
 name: Metrics
 on:
-  schedule:
-    - cron: "0 */12 * * *"
+  schedule: [{ cron: "0 */12 * * *" }]
   workflow_dispatch:
 
 permissions:
   contents: write
 
 jobs:
-  build:
+  metrics:
     runs-on: ubuntu-latest
     steps:
-      # CARD PRINCIPAL (clean + donut + 3D)
-      - name: Main metrics card
+      # CARD PRINCIPAL — clean + linguagens + 3D pequeno
+      - name: Main card
         uses: lowlighter/metrics@latest
         with:
-          token: ${{ secrets.METRICS_TOKEN || secrets.GITHUB_TOKEN }}
-
+          token: ${{ secrets.GITHUB_TOKEN }}     # ou METRICS_TOKEN se quiser contar privados
           user: snugbX
           filename: github-metrics.svg
-
-          # Deixa só o cabeçalho; o resto vem dos plugins
           base: header
           config_timezone: America/Bahia
+          committer_branch: master
+          committer_message: "chore: metrics(main)"
 
-          # 3D isométrico (ano todo)
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
 
-          # Donut de linguagens (most-used)
           plugin_languages: yes
           plugin_languages_sections: most-used
           plugin_languages_details: percentage
           plugin_languages_limit: 8
           plugin_languages_other: true
-          # Se quiser contar privados, use METRICS_TOKEN com acesso a private repos
-          # plugin_languages_analysis_timeout: 30
 
-      # CARD SECUNDÁRIO (só o 3D grandão, para usar como banner extra)
-      - name: Big 3D calendar only
+      # BANNER — só o 3D grandão
+      - name: 3D calendar only
         uses: lowlighter/metrics@latest
         with:
-          token: ${{ secrets.METRICS_TOKEN || secrets.GITHUB_TOKEN }}
-
+          token: ${{ secrets.GITHUB_TOKEN }}
           user: snugbX
           filename: github-metrics-3d.svg
-          base: ""               # sem blocos de texto
+          base: ""
           config_timezone: America/Bahia
-
+          committer_branch: master
+          committer_message: "chore: metrics(3d)"
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
+
+      # ACHIEVEMENTS — compacto e elegante
+      - name: Achievements
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          user: snugbX
+          filename: github-metrics-achievements.svg
+          base: ""
+          config_timezone: America/Bahia
+          committer_branch: master
+          committer_message: "chore: metrics(achievements)"
+          plugin_achievements: yes
+          plugin_achievements_display: compact
+          plugin_achievements_threshold: C
+          plugin_achievements_limit: 12
