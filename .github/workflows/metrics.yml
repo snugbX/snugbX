@@ -1,11 +1,11 @@
 name: Metrics
 on:
   schedule:
-    - cron: "0 */12 * * *"   # atualiza a cada 12h
+    - cron: "0 */12 * * *"   # a cada 12h
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: write            # PERMISSÃO PARA COMMITAR O SVG
 
 jobs:
   build:
@@ -14,16 +14,16 @@ jobs:
       - name: Generate SVG
         uses: lowlighter/metrics@latest
         with:
-          # use um dos dois tokens (prefira METRICS_TOKEN se criou)
-          token: ${{ secrets.METRICS_TOKEN }}
-          # token: ${{ secrets.GITHUB_TOKEN }}
+          # pode usar o GITHUB_TOKEN padrão mesmo
+          token: ${{ secrets.GITHUB_TOKEN }}
 
           user: snugbX
-          filename: github-metrics.svg
           template: classic
+          filename: github-metrics.svg
           base: header, activity, community, repositories, metadata
           config_timezone: America/Bahia
           committer_branch: master
+          committer_message: "chore: update metrics"
 
           # Calendário isométrico (3D)
           plugin_isocalendar: yes
